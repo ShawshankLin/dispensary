@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <pati_case_history 
+			ID='053' 
+			Case_ID='646' 
+			StuNum='StuNum678' 
+			VisitDate='2014-10-28 08:23:40.575' 
+			DispensaryRecord='DispensaryRecord963' 
+			allergy='Allergy324' 
+			primary_care='PrimaryCare330' 
+			re_examination='ReExamination430' 
+			Describes='Describes767' 
+			ExamineStatus='ExamineStatus991' 
+			FirstImpress='FirstImpress769' 
+			PrecriptID='PrecriptId008' 
+			MeStID='169' 
+	  />	
+  
+</dataset>

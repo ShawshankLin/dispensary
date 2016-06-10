@@ -1,0 +1,122 @@
+html {
+	height: 100%;
+}
+body{
+	background: url(../../images/loginIcon/cloud.png) bottom center  repeat-x #049ec4;
+	width: 100%;
+	height: auto;
+	font-family: "微软雅黑";
+	font: 12px/1.5 tahoma,arial,宋体,sans-serif;
+	-webkit-animation: animate-cloud 20s linear infinite;
+	-moz-animation: animate-cloud 20s linear infinite;
+	-ms-animation: animate-cloud 20s linear infinite;
+	-o-animation: animate-cloud 20s linear infinite;
+	animation: animate-cloud 20s linear infinite;
+}
+
+/*cloud move*/
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px
+}
+::-webkit-scrollbar-button:vertical {
+	display: none
+}
+::-webkit-scrollbar-track:vertical {
+	background-color: black
+}
+::-webkit-scrollbar-track-piece {
+	background: #FDFDFD;
+}
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #8E8E8E;
+	border-radius: 5px
+}
+::-webkit-scrollbar-thumb:vertical:hover {
+	background-color: #3B3B3B
+}
+::-webkit-scrollbar-corner:vertical {
+	background-color: #535353
+}
+::-webkit-scrollbar-resizer:vertical {
+	background-color: #FF6E00
+}
+
+@-webkit-keyframes animate-cloud {
+from {
+	background-position: 600px 100%;
+}
+to {
+	background-position: 0 100%;
+}
+}
+@-moz-keyframes
+animate-cloud {from {
+	background-position: 600px 100%;
+}
+to {
+	background-position: 0 100%;
+}
+}
+@-ms-keyframes
+animate-cloud {from {
+	background-position: 600px 100%;
+}
+to {
+	background-position: 0 100%;
+}
+}
+@-o-keyframes
+animate-cloud {from {
+	background-position: 600px 100%;
+}
+to {
+	background-position: 0 100%;
+}
+}
+
+
+/*head*/
+.head{height:47px; position:absolute; top:0; background:url(../../images/loginIcon/loginbg1.png) repeat-x;z-index:100; width:100%;}
+.head span{color:#fff; line-height:47px; background:url(../../images/loginIcon/loginsj.png) no-repeat 21px 18px; text-indent:44px; color:#afc5d2; float:left;}
+.head ul{float:right; padding-right:30px;list-style-type:none;}
+.head ul li{float:left; margin-left:20px; line-height:27px;}
+.head ul li a{color:#afc5d2;text-decoration: none;}
+.head ul li a:hover{color:#fff;}
+
+/*content*/
+.content{
+	width:960px;
+	height:auto;
+	margin:5% auto;
+	
+}
+.logo{
+	background:url(../../images/loginIcon/logo.png) no-repeat;
+	width:297px;
+	height:170px;
+	position:absolute;
+	left: 15%;
+	top:25%;
+}
+.loginBox{
+	width:430px;
+	height:300px;
+	position:absolute;
+	right:10%;
+	top:20%;
+}
+.logintop{
+	background: none repeat scroll 0 0 #19b4ea;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #fdfdfd;
+    font: 26px/70px "microsoft yahei";
+    height: 70px;
+    letter-spacing: 3px;
+    text-align: left;
+    text-indent: 20px;
+    width: 100%;
+}
+
+

@@ -1,0 +1,118 @@
+
+#horizontalbar-chart-wrapper{
+	width:750px;
+	height:450px;
+	display:block;
+	background-color:white;
+	border:1px solid gray;
+	border-radius:10px;
+	padding: 55px 20px 0px 20px;
+	margin:50px 0px 0px 250px;
+}
+.horizontalbar-x-axis{
+	margin-top: -40px;
+	height: 450px;
+	width:580px;
+	margin-left: 100px;
+}
+.horizontalbar-x-axis li{
+	list-style-type: none;
+	height:450px;
+	width: 60.9px;
+	display: inline-block;
+	margin-left: -5px;
+}
+.horizontalbar-x-axis li:first-child{
+	position: absolute;
+	margin-left: -40px;
+	margin-top: 3px;
+	width:11px;
+	background-color: gray !important;
+	transform: skew(0deg,-30deg);
+-ms-transform: skew(0deg,-30deg); /* IE 9 */
+-webkit-transform: skew(0deg,-30deg); /* Safari and Chrome */
+}
+.horizontalbar-x-axis li:nth-child(2){
+margin-left: -29px;
+}
+.horizontalbar-x-axis li:nth-child(2n+1){
+	background-color:#c6c6c4;
+}
+.horizontalbar-x-marking{
+	width:600px;
+	height:20px;
+	margin-top:-15px;
+	margin-left: 80px
+}
+.horizontalbar-x-marking li{
+	position:absolute;
+	list-style-type: none;
+	display: inline-block;
+	font-family: Cambria;
+	margin-left: 240px;
+}
+.horizontalbar-y-marking{
+	margin-top: -485px;	
+}
+.horizontalbar-y-marking li{
+	position:absolute;
+	list-style-type: none;
+	font-family: Cambria;
+}
+.horizontalbar-x-marking li:first-child{
+	margin-left: -15px;
+}
+.horizontalbar-bar{
+	position: absolute;
+	margin-top:-420px;
+	width:600px;
+	height: 30px;
+	margin-left: -40px;
+}
+.horizontalbar-front{
+background: #1e69de;
+  height:20px;
+  width:9px;
+  border:1px solid black;
+  position:absolute;
+bottom:0;
+}
+.horizontalbar-back{
+background: #1e69de;
+  height:7px;/*same height as front part*/
+  width:9px;
+  margin-left:4px;
+  transform: skew(-40deg,0deg);
+  -ms-transform: skew(-40deg,0deg);
+  -webkit-transform: skew(-40deg,0deg);
+  border:1px solid black;
+  position:absolute;
+  bottom:21px;/*to make in line with front part*/
+}
+.horizontalbar-top{
+background: #1e69de;
+  width:7px;
+  height:18px;
+  margin-top: 5px;
+  margin-left: 10px;
+  transform: skew(0deg,-50deg);
+  -ms-transform: skew(0deg,-50deg);
+ -webkit-transform: skew(0deg,-50deg);
+  border:1px solid black;
+  margin-left: 9px;
+}
+.horizontalbar-tip{
+	position:absolute;
+	font:bold italic 20px cambria;
+	margin-left:620px;
+	margin-top:-10px;
+	pointer-events:none;
+	opacity: 0;
+	z-index: 100;
+}
+#horizontalbar-label{
+	margin-left: 540px;
+	font-family: cambria;
+	font-weight: bold;
+	font-style:italic;
+}

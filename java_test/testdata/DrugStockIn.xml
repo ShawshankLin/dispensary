@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <drug_stock_in 
+			ID='658' 
+			SerialNumber='SerialNumber066' 
+			Stock_In_ID='StockInId981' 
+			InDate='InDate120' 
+			OperatorID='823' 
+			SupplierID='436' 
+	  />	
+  
+</dataset>

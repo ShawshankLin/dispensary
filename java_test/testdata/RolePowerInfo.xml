@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <role_power_info 
+			ID='368' 
+			RoleID='803' 
+			PowerID='307' 
+	  />	
+  
+</dataset>

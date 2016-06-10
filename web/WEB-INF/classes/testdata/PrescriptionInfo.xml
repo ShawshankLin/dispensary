@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <prescription_info 
+			ID='317' 
+			PresID='PresId851' 
+			DrugID='500' 
+			Amount='367' 
+			Usages='Usages580' 
+			DrugSum='303' 
+			isDrug='013' 
+			SelfPay='200' 
+			QuantityUnit='117' 
+	  />	
+  
+</dataset>

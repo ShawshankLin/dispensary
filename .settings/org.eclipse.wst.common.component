@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="dispensary">
+        <wb-resource deploy-path="/" source-path="/web" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/generator/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java_test"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java_src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="/dispensary"/>
+        <property name="java-output-path" value="/dispensary/web/WEB-INF/classes"/>
+        <property name="me-merge-utility-modules" value="true"/>
+    </wb-module>
+</project-modules>

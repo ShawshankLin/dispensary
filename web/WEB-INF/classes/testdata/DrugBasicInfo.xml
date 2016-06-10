@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <drug_basic_info 
+			DrugID='009' 
+			DrugName='DrugName084' 
+			DrugPingyin='DrugPingyin969' 
+			DrugEffect='259' 
+			DrugKickBack='100' 
+			DrugNote='DrugNote940' 
+			UnitID='124' 
+			DrugTabu='DrugTabu666' 
+			CostPrice='211' 
+			RetailPrice='292' 
+			ProductionDate='2014-10-28 08:23:29.861' 
+			PeriodOfValidity='471' 
+			UpLimit='210' 
+			DownLimit='339' 
+			UpLimit1='320' 
+			DownLimit1='668' 
+			SymptomID='421' 
+	  />	
+  
+</dataset>

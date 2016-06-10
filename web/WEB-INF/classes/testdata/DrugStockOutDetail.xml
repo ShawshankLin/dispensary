@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <drug_stock_out_detail 
+			ID='404' 
+			StockOutID='StockOutId372' 
+			SerialNumber='SerialNumber696' 
+			DrugID='676' 
+			OutDate='OutDate925' 
+			OutAmount='528' 
+			OutPlaceID='438' 
+			FromPlaceID='099' 
+	  />	
+  
+</dataset>

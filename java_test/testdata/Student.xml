@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <student 
+			StuNum='StuNum171' 
+			StuName='StuName592' 
+			Sex='416' 
+			BirthDate='2014-10-28 08:23:45.469' 
+			IDCard='Idcard561' 
+			Tel='Tel176' 
+			Department='Department659' 
+			Major='Major911' 
+			StuClass='StuClass685' 
+			Address='Address092' 
+	  />	
+  
+</dataset>

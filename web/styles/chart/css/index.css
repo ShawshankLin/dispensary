@@ -1,0 +1,42 @@
+body{
+}
+h1{
+text-align: center;
+font:bold 30px cambria;
+}
+#nav{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+#nav li{
+	display: inline-block;
+	color: white;
+	padding: 10px;
+	font:20px cambria;
+	border-right: 1px solid white;
+	cursor: pointer;
+}
+#nav{
+	background-color: black;
+}
+#main img{
+	margin-left: 350px;
+	margin-top: 100px;
+}
+#main p{
+margin-left: 150px;
+}
+#vertical-main,#horizontal-main,#line-main,#histogram-main,#pie-main{
+	margin-left: 10px;
+	font:17px cambria;
+}
+p{
+	margin-left: 100px;
+}
+img{
+	margin-left: 100px;
+}
+#highlight{
+	font:bold 25px arial;
+}

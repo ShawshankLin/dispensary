@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <supplier 
+			SupplierID='482' 
+			SupplierName='SupplierName458' 
+			Contacts='Contacts829' 
+			Pingyin='Pingyin963' 
+			Address='Address266' 
+			UserTel='UserTel061' 
+			UserMobile='UserMobile713' 
+			UserEmail='UserEmail470' 
+			Note='Note654' 
+	  />	
+  
+</dataset>

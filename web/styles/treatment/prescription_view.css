@@ -1,0 +1,84 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+	{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	background: none repeat scroll 0 0 #eeeeee;
+	color: #333;
+	font-family: "Kreon";
+	font-weight: 300;
+	color: #333;
+}
+
+#box {
+	margin: 1% auto;
+	background: red;
+	width: 960px;
+	height: 600px;
+	z-index: 1000;
+	background: none repeat scroll 0 0 #f8f8f8;
+	border: 1px solid #666666;
+	border-radius: 5px;
+	display:none;
+}
+
+.title {
+	display: block;
+	color: #000;
+	font-size: 20pt;
+	font-weight: bold;
+	margin-top:10px;
+	text-align:center;
+
+}
+.head{
+	width:100%;
+/* 	height:50px; */
+	text-align:center;
+	margin-top: 20px;
+}
+.head table{
+	font-size:11pt;
+}
+.head table .th{
+	font-size: 13pt;
+	font-weight: bold;
+	text-align:right;
+}
+.head table td{
+	margin: 20px;
+	
+}
+a {
+	color: #666;
+}
+
+#content{
+	height: 450px;
+	width: 100%;
+	max-width: 960px;
+	overflow: scroll;
+	
+}
+.foot{
+	display:block;
+	float:right;
+	margin-top: 20px;
+	font-size: 13pt;
+	font-weight: bold;
+	width:400px;
+}
+.div_but{
+	margin:0 auto;
+	width:960px;
+	text-align:right;
+}

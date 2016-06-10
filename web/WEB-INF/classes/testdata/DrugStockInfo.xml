@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <drug_stock_info 
+			ID='932' 
+			DrugID='857' 
+			DrugPlaceID='366' 
+			CurAmount='672' 
+	  />	
+  
+</dataset>

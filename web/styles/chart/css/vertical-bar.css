@@ -1,0 +1,128 @@
+
+/*Change The Size Of Whole Graph By Editing In Wrapper.You have to adjust Margin so Graph Looks In The center of Your screen*/
+#verticalbar-chart-wrapper{
+	width:1100px;
+	height:350px;
+	display:block;
+	background-color: white;
+	border:1px solid gray;
+	border-radius:10px;
+	padding: 55px 20px 0px 20px;
+	margin:100px 0px 0px 130px; /*set margin according to your page */
+}
+/*y-axis-class contains y-axis marking and vertical block*/
+.verticalbar-y-axis{
+	margin:0px;
+	margin-left: 20px;
+	height:310px;
+}
+/*every li creates one vertical block.Right now you have Five blocks*/
+.verticalbar-y-axis li{
+	list-style-type: none;
+	font-family: Cambria;
+	border-top:1px solid #e0dfde;
+	height:29px; /*important while adjusting bar height */
+}
+/*some blocks are dark gray than other*/
+.verticalbar-gray{
+background-color:#f4f4f4;
+}
+/*For Last dark grey base on which every bar stands*/
+#verticalbar-last{
+	background-color:#c9c9c7;
+	height:11px; /*important while adjusting bar height */
+	margin-left:-3px;
+	margin-right:2px;
+	transform: skew(-30deg,0deg);
+-ms-transform: skew(-30deg,0deg); /* IE 9 */
+-webkit-transform: skew(-30deg,0deg); /* Safari and Chrome */
+}
+/*adjusting marking "0" in line with base*/
+#verticalbar-label-last{
+	margin-top: -22px;
+}
+/*y-axis marking*/
+.verticalbar-label-y{
+	font-family: Cambria;
+	position:absolute;
+	margin-left:-62px;
+	margin-top: -42px;
+}
+.verticalbar-x-axis{
+	margin-top: 10px;
+}
+/*x-axis marking*/
+.verticalbar-x-axis li{
+	position: absolute;
+	list-style-type: none;
+	display:inline-block;
+	font-family: Cambria;
+	text-align: center;
+	width:80px;
+}
+.verticalbar-x-axis li:first-child{
+	margin-left: 20px;
+}
+/*label*/
+#verticalbar-label{
+	margin-left: 540px;
+	font-family: cambria;
+	font-weight: bold;
+	font-style:italic;
+}
+.verticalbar-tip{
+	position:absolute;
+	font:bold italic 20px cambria;
+	margin-top:-30px;
+	pointer-events:none;
+	opacity: 0;
+	z-index: 100;
+	
+}
+/*Style border below and see how full bar stands in which our custom bar is places*/
+.verticalbar-barA,.verticalbar-barB,.verticalbar-barC{
+	position:absolute;
+  width:34px;
+   margin-left:50px;
+    margin-top:-315px;
+    margin-bottom:0;
+    height:315px;/*full height*/
+}
+.verticalbar-barA{
+  margin-left:29px;
+}
+.verticalbar-barC{
+  margin-left:71px;
+}
+.verticalbar-front{
+background: #1e69de;
+  height:10px;/*130 px means 40% height in Graph*/
+  width:20px;
+  border:1px solid black;
+  position:absolute;
+bottom:0;
+}
+.verticalbar-back{
+background: #1e69de;
+  height:10px;/*same height as front part*/
+  width:11px;
+  margin-left:21px;
+  transform: skew(0deg,-40deg);
+  -ms-transform: skew(0deg,-40deg);
+  -webkit-transform: skew(0deg,-40deg);
+  border:1px solid black;
+  position:absolute;
+  bottom:5px;/*to make in line with front part*/
+}
+.verticalbar-top{
+background: #1e69de;
+  width:20px;
+  height:9px;
+  margin-top:293px;
+  margin-left:6px;
+  transform: skew(-50deg,0deg);
+  -ms-transform: skew(-50deg,0deg);
+ -webkit-transform: skew(-50deg,0deg);
+  border:1px solid black;
+  
+}

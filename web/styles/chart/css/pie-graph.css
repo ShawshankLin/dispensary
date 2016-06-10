@@ -1,0 +1,36 @@
+#pie-wrapper{
+width:750px;
+margin:50px 0px 0px 250px;	
+}
+#pie{
+}
+#pie-table{
+width:270px;
+height:auto;
+float:right;
+margin-top: 50px;
+}
+#pie-label caption{
+	font-family:Cambria;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+#pie-label
+{
+font-family:Cambria;
+width:100%;
+}
+#pie-label td, #pie-label th 
+{
+font-size:1em;
+border:1px solid black;
+padding:3px;
+text-align: center;
+}
+#pie-label th 
+{
+font-size:1.1em;
+text-align:center;
+color:black;
+}

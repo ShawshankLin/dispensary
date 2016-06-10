@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <dispensarystaff 
+			MeStID='809' 
+			MeStName='MeStName044' 
+			Sex='625' 
+			Age='731' 
+			Education='Education1' 
+			Address='Address329' 
+			Tel='Tel296' 
+			Mobile='Mobile355' 
+			Email='Email525' 
+			Note='Note506' 
+			WorkPlace='WorkPlace477' 
+			UserID='UserId627' 
+			UserTypeID='764' 
+	  />	
+  
+</dataset>

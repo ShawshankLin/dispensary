@@ -1,0 +1,189 @@
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	margin:0px;
+	margin-top:5px;
+	padding:0px;
+	background: none repeat scroll 0 0 #eeeeee;
+}
+
+.content {
+	width: 1100px;
+	margin: 0 auto;
+	background: none repeat scroll 0 0 #ffffff;
+	border: 1px solid #ccc; 
+	border-radius: 2px;
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.search {
+	width: 100%;
+	
+}
+
+body input {
+	margin: 5px;
+}
+
+.old_medical_record {
+	margin-top: 10px;
+	width: 100%;
+	display: block;
+	text-align: center;
+	border: 1px solid rgb(28, 184, 65);
+	border-bottom: 0px;
+}
+
+.new_medical_record {
+	margin-top: 10px;
+	width: 100%;
+	display: none;
+	text-align: center;
+	border: 1px solid #87CEFF;
+	border-bottom: 0px;
+}
+
+.flip {
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+ .drug_table {
+	overflow: scroll;
+	height: 350px;
+	width: 1100px;
+	padding-top: 10px;
+}
+
+.green,.red,.light_blue,.blue {
+	border-radius: 4px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-family: "lucida Grande", "Microsoft Yahei";
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.green {
+	background: rgb(124, 204, 79); /* 这是绿色 */
+}
+
+.red {
+	background: rgb(217, 83, 79); /* 这是褐红色 */
+}
+
+.blue {
+	background: rgb(66, 184, 221); /* 这是浅蓝色 */
+}
+
+
+.pure-form legend {
+	font-size: 18px;
+}
+
+.pure-form .pure-input-1 {
+	width: 95%;
+}
+
+.resultbox {
+	width: 300px;
+	height: 280px;
+	background: none repeat scroll 0 0 #fff;
+	display: none;
+	z-index: 10000;
+	position: absolute;
+	top: 45px;
+}
+
+.resultbox select option {
+	color: #05a;
+}
+
+.resultbox img {
+	width: 300px;
+	height: 280px;
+	background: url(../images/loading.gif) 50% no-repeat;
+}
+
+.data_table {
+	width: 100%;
+	border: 1px solid #d3d3d3;
+	background: #fefefe;
+	-moz-border-radius: 5px; /* FF1+ */
+	-webkit-border-radius: 5px; /* Saf3-4 */
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.data_table th,td {
+	padding: 8px 10px 8px;
+	text-align: center;
+}
+
+.data_table th {
+	padding-top: 22px;
+	text-shadow: 1px 1px 1px #fff;
+	background: #e8eaeb;
+}
+
+.data_table td {
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+}
+
+.data_table tr.odd-row td {
+	background: #f6f6f6;
+}
+
+.data_table td.first,th.first {
+	text-align: left
+}
+
+.data_table td.last {
+	border-right: none;
+}
+
+.data_table td {
+	background: -moz-linear-gradient(100% 25% 90deg, #fefefe, #f9f9f9);
+	background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f9f9f9),
+		to(#fefefe));
+}
+
+.data_table tr.odd-row td {
+	background: -moz-linear-gradient(100% 25% 90deg, #f6f6f6, #f1f1f1);
+	background: -webkit-gradient(linear, 0% 0%, 0% 25%, from(#f1f1f1),
+		to(#f6f6f6));
+}
+
+.data_table th {
+	background: -moz-linear-gradient(100% 20% 90deg, #e8eaeb, #ededed);
+	background: -webkit-gradient(linear, 0% 0%, 0% 20%, from(#ededed),
+		to(#e8eaeb));
+}
+
+.data_table tr:first-child th.first {
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px; /* Saf3-4 */
+}
+
+.data_table tr:first-child th.last {
+	-moz-border-radius-topright: 5px;
+	-webkit-border-top-right-radius: 5px; /* Saf3-4 */
+}
+
+.data_table tr:last-child td.first {
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px; /* Saf3-4 */
+}
+
+.data_table tr:last-child td.last {
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px; /* Saf3-4 */
+}

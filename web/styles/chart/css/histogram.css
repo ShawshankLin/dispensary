@@ -1,0 +1,100 @@
+
+/*Change The Size Of Whole Graph By Editing In Wrapper.You have to adjust Margin so Graph Looks In The center of Your screen*/
+#histogram-chart-wrapper{
+	width:1100px;
+	height:350px;
+	display:block;
+	background-color: white;
+	border:1px solid gray;
+	border-radius:10px;
+	padding: 55px 20px 0px 20px;
+	margin:100px 0px 0px 130px; /*set margin according to your page */
+}
+/*y-axis-class contains y-axis marking and vertical block*/
+.histogram-y-axis{
+	margin:0;
+	height:310px;
+	margin-left: 20px;
+
+}
+/*every li creates one vertical block.Right now you have Five blocks*/
+.histogram-y-axis li{
+	list-style-type: none;
+	font-family: Cambria;
+	border-top:1px solid #e0dfde;
+	height:29px; 
+
+}
+/*some blocks are dark gray than other*/
+.histogram-gray{
+background-color:#f4f4f4;
+}
+/*For Last dark grey base on which every bar stands*/
+#histogram-last{
+	background-color:#c9c9c7;
+	height:11px; /*important while adjusting bar height */
+	margin-right:2px;
+}
+/*adjusting marking "0" in line with base*/
+#histogram-label-last{
+	margin-top: -22px;
+}
+/*y-axis marking*/
+.histogram-label-y{
+	font-family: Cambria;
+	position:absolute;
+	margin-left:-62px;
+	margin-top: -42px;
+}
+.histogram-x-axis{
+	margin-top: 10px;
+}
+/*x-axis marking*/
+.histogram-x-axis li{
+	position:absolute;
+	list-style-type: none;
+	display:inline;
+	font-family: Cambria;
+	text-align: center;
+	width:80px;
+}
+
+.histogram-x-axis li:first-child{
+	margin-left: -20px ;
+}
+
+
+/*label*/
+#histogram-label{
+	margin-left: 540px;
+	font-family: cambria;
+	font-weight: bold;
+	font-style:italic;
+}
+.histogram-tip{
+	position:absolute;
+	font:bold italic 15px cambria;
+	margin-top:-20px;
+	pointer-events:none;
+	opacity: 0;
+	z-index: 100;
+	
+}
+
+.histogram-bar{
+	position:absolute;
+  width:34px;
+   margin-left:0px;
+    margin-top:-315px;
+    margin-bottom:0;
+    height:315px;/*full height*/
+}
+.histogram-front{
+background: #1e69de;
+  height:10px;
+  width:25px;
+  border:1px solid black;
+  position:absolute;
+bottom:0;
+}
+

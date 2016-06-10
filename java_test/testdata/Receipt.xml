@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <receipt 
+			PresID='PresId893' 
+			RecID='746' 
+			DrugSum='156' 
+			RegisterSum='758' 
+			Sum='513' 
+			MeStID='738' 
+			RecDate='2014-10-28 08:23:43.596' 
+	  />	
+  
+</dataset>

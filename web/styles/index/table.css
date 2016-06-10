@@ -1,0 +1,58 @@
+*{margin:0;padding:0;}
+html,body{overflow:hidden;}
+body{font:16px/1.5 "Microsoft Yahei", sans-serif;}
+a:visited{color:#000000}
+ol,ul,li{list-style:none;}
+.clear{display:block;width:0;height:0;font-size:0;clear:both;visibility:hidden;background:none;border:none;float:none;overflow:none;}
+#topnav{width:100%;height:62px;border-bottom:1px solid #4294D0;background:#E6F4FD;}
+#topnav h1{height:62px;line-height:62px;float:left;display:inline;color:#2495E1;margin-left:20px;}
+#main_nav{float:right;display:inline;font-size:12px;margin-top:20px;}
+#main_nav li{float:left;}
+#main_nav li a{display:block;padding:3px 8px;border:1px solid #C1D5ED;margin-right:10px;background:#EFF2F8;color:#555;}
+#main_nav li a:hover{background:#3EA5DD;color:#fff;border-color:#3EA5DD;}
+#menu{width:150px;margin:0 auto;margin-top:10px;}
+#menu dl{margin-bottom:20px;}
+#menu dl dt{padding-left:10px;background:#1D96CF;color:#fff;font-size:14px;line-height:2;}
+#menu dl dd ul li a{display:block;width:118px;background:#f6fbff;border:1px solid #cadde4;border-top:none;font-size:12px;line-height:2;color:#364633;padding-left:30px;}
+.item{margin:10px 20px;width:400px;height:300px;float:left;border:1px solid #cad9ea;border-top:none;}
+.item h3{font-size:11pt;color:#fff;background:#1D96CF;line-height:2;padding-left:20px;}
+.item .content{padding:10px 10px;font-size:11pt;line-height:2;overflow:auto; width:380px;height:250px;}
+#top{width:100%;height:63px;}
+#left_menu,#right_body{float:left;display:inline;}
+#mask{width:100%;height:100%;position:absolute;background:#000;opacity:.5}
+#popupmenu{display:none;position:absolute;z-index:900;width:100%;height:100%;top:50px;}
+.shwobox1{position:absolute;width:485px;background-color:#f5fafe;top:0px;right:3px;border-bottom:2px solid #c8d2d5;border-right:2px solid #c8d2d5;z-index:9;zoom:1;}
+.shwobox1 .box{border:1px solid #4294ce;padding:10px 20px 40px;zoom:1;}
+.shwobox1 .box dl{float:left;width:100px;padding-left:10px;padding-top:10px;}
+.shwobox1 .box dl dt{font-size:16px;line-height:30px;font-weight:bold;height:30px;}
+.shwobox1 .box dl dt a{color:#069;}
+.shwobox1 .box dd{font-size:14px;line-height:1.8;}
+.shwobox1 .box dd a{color:#333;}
+.shwobox1 .box dd a:hover{color:#f00;}
+.shwobox1 .box em{position:absolute;right:10px;bottom:10px;height:17px;width:17px;cursor:pointer;z-index:99;}
+.green,.red,.blue,.pink,.light_green
+{
+	font-family: inherit;
+	color: #fff;
+	font-size: 14px;
+	white-space: nowrap;
+	line-height:70px;
+	font-weight: normal;
+	border-radius: 40px;
+}
+.green {
+	background: rgb(124, 204, 79); /* 这是绿色 */
+}
+
+.red {
+	background: rgb(217, 83, 79); /* 这是褐红色 */
+}
+.blue {
+	background: rgb(91, 192, 222); /* 这是浅蓝色 */
+}
+.pink {
+	background:#FFB5C5 /* 这是粉红色 */
+}
+.light_green{
+	background: #FFF68F; /* 这是绿色 */
+}

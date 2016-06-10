@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- DBUnit flatXml DataFile -->
+<dataset>
+
+
+	  <drug_place 
+			DrugPlaceID='787' 
+			DrugPlace='DrugPlace717' 
+			Status='Status284' 
+			PlaceType='147' 
+			isStoreroom='433' 
+	  />	
+  
+</dataset>

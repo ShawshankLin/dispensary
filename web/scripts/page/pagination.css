@@ -1,0 +1,18 @@
+.pagination A {
+	BORDER-BOTTOM: #aae 1px solid; BORDER-LEFT: #aae 1px solid; COLOR: #15b; BORDER-TOP: #aae 1px solid; BORDER-RIGHT: #aae 1px solid; TEXT-DECORATION: none
+}
+.pagination A {
+	PADDING-BOTTOM: 0.1em; PADDING-LEFT: 0.4em; PADDING-RIGHT: 0.4em; DISPLAY: inline-block; MARGIN-BOTTOM: 5px; MARGIN-RIGHT: 5px; PADDING-TOP: 0.1em
+}
+.pagination SPAN {
+	PADDING-BOTTOM: 0.1em; PADDING-LEFT: 0.4em; PADDING-RIGHT: 0.4em; DISPLAY: inline-block; MARGIN-BOTTOM: 5px; MARGIN-RIGHT: 5px; PADDING-TOP: 0.1em
+}
+.pagination .current {
+	BORDER-BOTTOM: #aae 1px solid; BORDER-LEFT: #aae 1px solid; BACKGROUND: #26b; COLOR: #fff; BORDER-TOP: #aae 1px solid; BORDER-RIGHT: #aae 1px solid
+}
+.pagination .prev.current {
+	BORDER-BOTTOM-COLOR: #999; BORDER-TOP-COLOR: #999; BACKGROUND: #fff; COLOR: #999; BORDER-RIGHT-COLOR: #999; BORDER-LEFT-COLOR: #999
+}
+.pagination .next.current {
+	BORDER-BOTTOM-COLOR: #999; BORDER-TOP-COLOR: #999; BACKGROUND: #fff; COLOR: #999; BORDER-RIGHT-COLOR: #999; BORDER-LEFT-COLOR: #999
+}

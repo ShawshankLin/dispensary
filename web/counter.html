@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>计算器</title>
+<style type="text/css">
+*{margin:0;padding:0;}
+body{font:12px/20px "Comic Sans MS";}
+#calc{position:absolute;left:50%;top:50%;margin:-161px 0 0 -120px;width:203px;background-color:#333;padding:3px;}
+#display{width:203px;height:60px;background-color:#f2f2f4;}
+#display #up, #display #down{height:20px;padding:0 5px;text-align:right;font: 14px/20px "Arial";}
+#display #up .countSize{padding:0 5px;}
+#display #down{height:40px;font:bold 20px/40px "Arial";}
+#buttons{width:203px;}
+#buttons input{float:left;display:block;width:50px;overflow:hidden;}
+#buttons #num{float:left;width:153px;overflow:hidden;}
+#buttons #num input{height:63px;margin:1px 1px 0 0;}
+#buttons #math{float:left;width:50px;overflow:hidden;}
+#buttons #math input{height:50px;margin:1px 0 0 0;}
+#buttons #math input#equal{height:51px;}
+/* --- css3 --- */
+input{
+        font-size:18px;
+        font-family:"Microsoft Yahei";
+        color:#3e3e3e;
+        border:none;
+        border-radius: 1px;
+        background: rgb(235,232,232); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(235,232,232,1) 1%, rgba(212,212,212,1) 50%, rgba(179,179,179,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(235,232,232,1)), color-stop(50%,rgba(212,212,212,1)), color-stop(100%,rgba(179,179,179,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(235,232,232,1) 1%,rgba(212,212,212,1) 50%,rgba(179,179,179,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(235,232,232,1) 1%,rgba(212,212,212,1) 50%,rgba(179,179,179,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(235,232,232,1) 1%,rgba(212,212,212,1) 50%,rgba(179,179,179,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(235,232,232,1) 1%,rgba(212,212,212,1) 50%,rgba(179,179,179,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe8e8', endColorstr='#b3b3b3',GradientType=0 ); /* IE6-9 */
+}
+input:hover{
+        color:#333;
+        background: rgb(235,232,232); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(235,232,232,1) 1%, rgba(234,234,234,1) 50%, rgba(206,206,206,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(235,232,232,1)), color-stop(50%,rgba(234,234,234,1)), color-stop(100%,rgba(206,206,206,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(235,232,232,1) 1%,rgba(234,234,234,1) 50%,rgba(206,206,206,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(235,232,232,1) 1%,rgba(234,234,234,1) 50%,rgba(206,206,206,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(235,232,232,1) 1%,rgba(234,234,234,1) 50%,rgba(206,206,206,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(235,232,232,1) 1%,rgba(234,234,234,1) 50%,rgba(206,206,206,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebe8e8', endColorstr='#cecece',GradientType=0 ); /* IE6-9 */
+}
+</style>
+<script src="http://script2.pingan.com/app_js/ui30/js/jquery-1.3.2.js" language="javascript"></script>
+<script type="text/javascript">
+$(function(){
+        var countSize;
+        
+        //数字按钮
+        $("#buttons input.num").click(function(){
+                var numVal = $(this).val();
+                //判断初始值为0的时候，只有输入小数点才追加，否则覆盖
+                if( $("#display #down").text() == "0" ){
+                        if( numVal == "." ){
+                                $("#display #down").append(numVal);
+                        }else{
+                                $("#display #down").text(numVal);
+                        }
+                }
+                //使输入框里只能有一个小数点
+                else if( $("#display #down").text().indexOf(".") > 0 ){
+                        if( numVal == "." ){
+                                
+                        }else{
+                                $("#display #down").append(numVal);
+                        }
+                }else if( $("#display #down").text() == "" && numVal == "." ){
+                        $("#display #down").text("0").append(numVal);
+                }
+                else{
+                        $("#display #down").append(numVal);
+                }
+        })
+        
+        //加减乘除按钮
+        $("#buttons input.math").click(function(){
+                var upNum = $("#display #up .upNum").text();
+                var upMath = $("#display #up .countSize").text();
+                var downNum = $("#display #down").text();
+                if( upNum.length !== 0 && downNum.length !== 0 && upMath.length !== 0 ){
+                        countSize = $("#display #up .countSize").text();
+                        var upNum = $("#display #up .upNum").text();
+                        var downNum = $("#display #down").text();
+                        //如果a或b中有空值，则跳出此函数
+                        if( upNum == "" || downNum == "" ){return false;}
+                        var resultNum = count[countSize](upNum,downNum);
+                        $("#display #up .upNum").text(resultNum);
+                        countSize = $(this).val();
+                        $("#display #up .countSize").text(countSize);
+                        $("#display #down").text("");
+                }else{
+                        countSize = $(this).val();
+                        $("#display #up")
+                                .text(downNum)
+                                .wrapInner('<span class="upNum" /></span>')
+                                .append('<span class="countSize">' + countSize + '</span>');
+                        $("#display #down").text("");
+                }
+        })
+        
+        //等于按钮
+        $("#buttons input.equal").click(function(){
+                var upNum = $("#display #up .upNum").text();
+                var downNum = $("#display #down").text();
+                //如果a或b中有空值，则跳出此函数
+                if( upNum == "" || downNum == "" ){return false;}
+                var resultNum = count[countSize](upNum,downNum);
+                $("#display #down").text(resultNum);
+                $("#display #up").text("");
+        })
+        
+        //重置按钮
+        $("#buttons input.clearDisplay").click(function(){
+                $("#display #up").text("");
+                $("#display #down").text("0");
+        })
+        
+        //加减乘除的方法
+        var count = {
+                '+': function(a,b){return accAdd(a,b);},
+                '-': function(a,b){return accSub(a,b);},
+                '*': function(a,b){return accMul(a,b);},
+                '/': function(a,b){return accDiv(a,b);}
+        }
+        
+        /* ---------------- JS浮点数运算重置 ---------------- */
+        
+        //加法函数
+        //调用：accAdd(arg1,arg2)
+        //返回值：arg1加上arg2的精确结果
+        function accAdd(arg1,arg2){
+                var r1,r2,m;
+                try{r1=arg1.toString().split(".")[1].length}catch(e){r1=0}
+                try{r2=arg2.toString().split(".")[1].length}catch(e){r2=0}
+                m=Math.pow(10,Math.max(r1,r2));
+                return (arg1*m+arg2*m)/m;
+        }
+        
+        //减法函数
+        //调用：accSub(arg1,arg2)
+        //返回值：arg1减去arg2的精确结果
+        function accSub(arg1,arg2){
+                 var r1,r2,m,n;
+                 try{r1=arg2.toString().split(".")[1].length}catch(e){r1=0}
+                 try{r2=arg1.toString().split(".")[1].length}catch(e){r2=0}
+                 m=Math.pow(10,Math.max(r1,r2));
+                 //last modify by deeka
+                 //动态控制精度长度
+                 n=(r1>=r2)?r1:r2;
+                 return ((arg1*m-arg2*m)/m).toFixed(n);
+        }
+        
+        //乘法函数
+        //调用：accMul(arg1,arg2)
+        //返回值：arg1乘以arg2的精确结果
+        function accMul(arg1,arg2)
+        {
+                var m=0,s1=arg1.toString(),s2=arg2.toString();
+                try{m+=s1.split(".")[1].length}catch(e){}
+                try{m+=s2.split(".")[1].length}catch(e){}
+                return Number(s1.replace(".",""))*Number(s2.replace(".",""))/Math.pow(10,m);
+        }
+        
+        //除法函数
+        //调用：accDiv(arg1,arg2)
+        //返回值：arg1除以arg2的精确结果
+        function accDiv(arg1,arg2){
+                var t1=0,t2=0,r1,r2;
+                try{t1=arg1.toString().split(".")[1].length}catch(e){}
+                try{t2=arg2.toString().split(".")[1].length}catch(e){}
+                with(Math){
+                        r1=Number(arg1.toString().replace(".",""));
+                        r2=Number(arg2.toString().replace(".",""));
+                        return (r1/r2)*pow(10,t2-t1);
+                }
+        }
+
+})
+</script>
+</head>
+<body>
+<div id="calc">
+        <div id="display">
+                <div id="up"></div>
+                <div id="down">0</div>
+        </div>
+        <div id="buttons">
+                <div id="num">
+                        <input type="button" value="7" class="num" id="seven" />
+                        <input type="button" value="8" class="num" id="eight" />
+                        <input type="button" value="9" class="num" id="nine" />
+                        <input type="button" value="4" class="num" id="four" />
+                        <input type="button" value="5" class="num" id="five" />
+                        <input type="button" value="6" class="num" id="six" />
+                        <input type="button" value="1" class="num" id="one" />
+                        <input type="button" value="2" class="num" id="two" />
+                        <input type="button" value="3" class="num" id="three" />
+                        <input type="button" value="C" class="clearDisplay" id="clearDisplay" />
+                        <input type="button" value="0" class="num" id="zero" />
+                        <input type="button" value="." class="num" id="point" />
+                </div>
+                <div id="math">
+                        <input type="button" value="/" class="math" id="divide" />
+                        <input type="button" value="*" class="math" id="multiply" />
+                        <input type="button" value="-" class="math" id="reduce" />
+                        <input type="button" value="+" class="math" id="plus" />
+                        <input type="button" value="=" class="equal" id="equal" />
+                </div>
+        </div>
+</div>
+</body>
+</html>
